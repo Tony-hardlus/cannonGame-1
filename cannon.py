@@ -1,13 +1,3 @@
-"""Cannon, hitting targets with projectiles.
-
-Exercises
-
-1. Keep score by counting target hits.
-2. Vary the effect of gravity.
-3. Apply gravity to the targets.
-4. Change the speed of the ball.
-"""
-
 from random import randrange
 from turtle import *
 
@@ -72,7 +62,8 @@ def move():
 
     for target in targets:
         if not inside(target):
-            return
+            #VRDL: Modificación para que el juego nunca termine
+            targets[targets.index(target)].x=200
 
     ontimer(move, 50)
 
