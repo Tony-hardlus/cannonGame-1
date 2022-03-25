@@ -65,7 +65,7 @@ def move():
             #VRDL: Modificación para que el juego nunca termine
             targets[targets.index(target)].x=200
 
-    ontimer(move, 50)
+    ontimer(move, 2) #ARCR: Se cambio la velocidad del proyectil/balones. 
 
 
 setup(420, 420, 370, 0)
