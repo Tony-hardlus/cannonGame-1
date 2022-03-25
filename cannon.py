@@ -74,7 +74,7 @@ def move():
         if not inside(target):
             return
 
-    ontimer(move, 50)
+    ontimer(move, 2) #ARCR: Se cambio la velocidad del proyectil/balones. 
 
 
 setup(420, 420, 370, 0)
